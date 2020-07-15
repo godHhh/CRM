@@ -33,4 +33,16 @@ public class PlanController {
 		session.setAttribute("plans", plans);
 		return "pages/plan";
 	}
+	@RequestMapping("toPlan_add")
+	public String toPlanadd() {
+		return "pages/plan_add";
+	}
+	@RequestMapping("toPlan_edit")
+	public String toPlanedit() {
+		return "pages/plan_edit";
+	}
+	@RequestMapping("toPlan_detail")
+	public String toPlandetail() {
+		return "pages/plan_detail";
+	}
 }

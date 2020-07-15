@@ -32,7 +32,7 @@ public class PlanServiceImpl implements IPlanService{
 		if(address!=null&&!"".equals(address)) {			
 			plans = planDao.findByChanceHandlerAndChanceAddress(id, address, PageRequest.of(pageIndex, 2));
 		}else {
-			plans = planDao.findByChanceHandler(id, PageRequest.of(pageIndex, 2));
+			plans = planDao.findByChanceHandler(id, PageRequest.of(pageIndex, 5));
 		}
 		return plans;
 	}

@@ -14,4 +14,13 @@ public class CustomerController {
 	public String toCustomer() {
 		return "pages/customer";
 	}
+	@RequestMapping("toLinkman")
+	public String toLinkman() {
+		return "pages/linkman";
+	}
+	@RequestMapping("toActivities")
+	public String toActivities() {
+		return "pages/activities";
+	}
+	
 }

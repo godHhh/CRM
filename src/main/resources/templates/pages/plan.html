@@ -56,7 +56,9 @@
 		      <td th:text="${plan.chance.phone}">15864789213</td>
 		      <td th:text="${plan.result}">处理中</td>
 		      <td>
-		       <i  class="layui-icon layui-icon-loading"></i>
+		       <i th:if="${plan.result} == '待处理'" class="layui-icon layui-icon-edit"></i>
+		       <i th:if="${plan.result} == '处理中'" class="layui-icon layui-icon-fonts-code"></i>
+		       <i th:if="${plan.result} == '开发成功'" class="layui-icon layui-icon-face-smile"></i>
 		      </td>
 		    </tr>   
 		   </th:block> 
@@ -118,14 +120,14 @@
 		$('.search').click(function(){
 			alert('查询')
 		})
-		$('.layui-icon-loading').click(function(){
-			$('.layui-body').load('./pages/plan_add.html');  
+		$('.layui-icon-edit').click(function(){
+			$('.layui-body').load('toPlan_add');  
 		})
 		$('.layui-icon-fonts-code').click(function(){
-			$('.layui-body').load('./pages/plan_edit.html');  
+			$('.layui-body').load('toPlan_edit');  
 		})
 		$('.layui-icon-face-smile').click(function(){
-			$('.layui-body').load('./pages/plan_detail.html');  
+			$('.layui-body').load('toPlan_detail');  
 		})
 	})
 </script>

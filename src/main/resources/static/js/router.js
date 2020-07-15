@@ -19,7 +19,7 @@ $(function(){
        
       // }
       if($(this).text().trim()=="服务反馈"){
-        $('.layui-body').load('pages/feedback.html');
+        $('.layui-body').load('toFeedback');
         
       }
       if($(this).text().trim()=="服务处理"){

@@ -14,4 +14,8 @@ public class ServiceController {
 	public String toService() {
 		return "pages/service";
 	}
+	@RequestMapping("toServiceDetails2")
+	public String toServiceDetails2() {
+		return "pages/serviceDetails2";
+	}
 }

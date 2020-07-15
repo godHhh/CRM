@@ -41,10 +41,10 @@
 		      <td>李四</td>
 		      <td>真好</td>
 		      <td>啦啦啦</td>
-		      <td class="zhuangtai">已处理</td>
+		      <td class="zhuangtai">未处理</td>
 		      <td>
-		      	<i class="layui-icon layui-icon-edit editUser" title="编辑"></i> 
-      	        <i class="layui-icon layui-icon-ok updata" title="更新"></i> 
+		      	<i class="layui-icon layui-icon-edit editUser" title="处理"></i> 
+      	       <!--  <i class="layui-icon layui-icon-ok updata" title="更新"></i>  -->
 		      </td>
 		    </tr> 
 		    <tr>
@@ -65,7 +65,7 @@
 		     <td>李四</td>
 		      <td>真好</td>
 		      <td>啦啦啦</td>
-		      <td class="zhuangtai">已反馈</td>
+		      <td class="zhuangtai">已处理</td>
 		      <td>
 		      	<!-- <i class="layui-icon layui-icon-edit editUser" title="编辑"></i>  -->
 		      	<i class="layui-icon layui-icon-face-smile" title="详情"></i>     
@@ -194,7 +194,7 @@
 <script type="text/javascript">
 	$(function(){
 		$('.layui-icon-face-smile').click(function(){
-			 $('.layui-body').load('./pages/serviceDetails2.html');  
+			 $('.layui-body').load('toServiceDetails2');  
 		})
 		// 点击新增显示模态框
 		$('#add').click(function(){
